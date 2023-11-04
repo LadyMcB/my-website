@@ -3,13 +3,49 @@
 	<head>
 		<title>Ashley Barnum</title>
 		<style type="text/css">
-			body { max-width: 850px; margin 0 auto; padding: 2em; font-size: 20px; }
-			body h1:first-child { margin-top: 0; }
-			p, li { line-height: 1.5em; }
+			body { font-size: 20px; padding: 2em 20%; }
+			a:visited { color: blue; }
+			p,li { line-height: 1.5em; }
+
+			#hero h1 { margin-bottom: 0; }
+			#hero h2 { margin-top: 0.25em; }
+			#nav-menu { display: flex; justify-content: center; background-color: #614051; color: white; }
+			.menu-item { padding: 0.5em 1em; }
+			.menu-item a { color: white; }
+			.menu-item:hover { background-color: gold; cursor: pointer; font-weight: bold; }
+			.menu-item:hover a { color: black; }
+			.post { margin-left: 1em; display: flex; justify-content: flex-start; }
+			.post-date { width: 110px; }
 		</style>
 	</head>
 	<body>
-		<h1>Ashley Barnum</h1>
-		<p><a href="about.html">About Me</a> | <a href="thoughts.html">Thoughts</a> | <a href="ideas.html">Idea Library</a></p>
+		<div id="hero">
+			<h1>Ashley Barnum</h1>
+			<h2>Mom. Entrepreneur. Deliberate Creator.</h2>
+			<p>Hello and welcome to my little corner of the internet. Here you'll find the chronicles of my journey through life &mdash; musings, practical lessons, wild adventures. Dive into my writings, explore my latest projects, perhaps even find some inspiration.</p>
+		</div>
+		<div id="nav-menu">
+			<div class="menu-item"><a href="about.html">About Me</a></div>
+			<div class="menu-item"><a href="posts/">Writing</a></div>
+			<div class="menu-item"><a href="ideas.html">Idea Library</a></div>
+			<div class="menu-item"><a href="zettelkasten.html">Zettelkasten</a></div>
+		</div>
+		<div id="current">
+			<h3>What I'm Working On</h3>
+			<ul>
+				<li>enjoying time with my baby, who was born in March</li>
+				<li><a href="https://www.bluestarbookkeeping.com" target="_blank">Blue Star Bookkeeping</a> is my fun little day job that pays the bills</li>
+				<li>working on my Executive MBA at <a href="https://quantic.edu/" target="_blank">Quantic</a>, to be complete in March 2024</li>
+				<li>singing in the <a href="https://www.brevardcommunitychorus.org/" target="_blank">Brevard Community Chorus</a></li>
+				<li>avoiding work-baby-school-life overwhelm with support from <a href="https://www.dianembyron.com/" target="_blank">Unstoppable Heart Coaching</a></li>
+			</ul>
+
+		<div id="latest">
+			<h3>Latest</h3>
+			<div class="post">
+				<div class="post-date">2023-11-03</div>
+				<div class="post-title"><a href="posts/capstone-selected.html">I Finally Settled on a Business Idea for my MBA Capstone Project!</a></div>
+			</div>
+		</div>
 	</body>
 </html>
