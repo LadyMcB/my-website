@@ -1,51 +1,222 @@
-<!doctype html>
-<html>
-	<head>
-		<title>Ashley Barnum</title>
-		<style type="text/css">
-			body { font-size: 20px; padding: 2em 20%; }
-			a:visited { color: blue; }
-			p,li { line-height: 1.5em; }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashley Barnum Coaching | Money Mindset & Budgeting</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap');
 
-			#hero h1 { margin-bottom: 0; }
-			#hero h2 { margin-top: 0.25em; }
-			#nav-menu { display: flex; justify-content: center; background-color: #614051; color: white; }
-			.menu-item { padding: 0.5em 1em; }
-			.menu-item a { color: white; }
-			.menu-item:hover { background-color: gold; cursor: pointer; font-weight: bold; }
-			.menu-item:hover a { color: black; }
-			.post { margin-left: 1em; display: flex; justify-content: flex-start; }
-			.post-date { width: 110px; }
-		</style>
-	</head>
-	<body>
-		<div id="hero">
-			<h1>Ashley Barnum</h1>
-			<h2>Mom. Entrepreneur. Deliberate Creator.</h2>
-			<p>Hello and welcome to my little corner of the internet. Here you'll find the chronicles of my journey through life &mdash; musings, practical lessons, wild adventures. Dive into my writings, explore my latest projects, perhaps even find some inspiration.</p>
-		</div>
-		<div id="nav-menu">
-			<div class="menu-item"><a href="about.html">About Me</a></div>
-			<div class="menu-item"><a href="posts/">Writing</a></div>
-			<div class="menu-item"><a href="ideas.html">Idea Library</a></div>
-			<div class="menu-item"><a href="zettelkasten.html">Zettelkasten</a></div>
-		</div>
-		<div id="current">
-			<h3>What I'm Working On</h3>
-			<ul>
-				<li>enjoying time with my baby, who was born in March</li>
-				<li><a href="https://www.bluestarbookkeeping.com" target="_blank">Blue Star Bookkeeping</a> is my fun little day job that pays the bills</li>
-				<li>working on my Executive MBA at <a href="https://quantic.edu/" target="_blank">Quantic</a>, to be complete in March 2024</li>
-				<li>singing in the <a href="https://www.brevardcommunitychorus.org/" target="_blank">Brevard Community Chorus</a></li>
-				<li>avoiding work-baby-school-life overwhelm with support from <a href="https://www.dianembyron.com/" target="_blank">Unstoppable Heart Coaching</a></li>
-			</ul>
+        /* CSS RESET STUFF */
 
-		<div id="latest">
-			<h3>Latest</h3>
-			<div class="post">
-				<div class="post-date">2023-11-03</div>
-				<div class="post-title"><a href="posts/capstone-selected.html">I Finally Settled on a Business Idea for my MBA Capstone Project!</a></div>
-			</div>
-		</div>
-	</body>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html, body { height: 100%; }
+
+        body {
+            font-family: 'National Park', 'Helvetica', sans-serif;
+            line-height: 1.6;
+            color: #555;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fffaf0;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0 10px 0;
+        }
+
+        header p { font-size: 1.5rem; font-weight: bold; }
+
+        h1 {
+            color: #8e44ad;
+            margin-bottom: 10px;
+            font-size: 3.5rem;
+        }
+        h2 {
+            color: #8e44ad;
+            margin-bottom: 1rem;
+        }
+        h3 {
+            color: #8e44ad;
+            font-weight: normal;
+        }
+
+        p { margin-bottom: 1.5rem; }
+
+        section {
+            margin: 40px 0;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .profile-pic {
+            flex: 0 0 250px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .profile-pic img {
+            width: 100%;
+            height: auto;
+        }
+        .profile-text {
+            flex: 1;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .service-box {
+            flex-basis: calc(33% - 20px);
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .service-box:hover {
+            transform: translateY(-5px);
+        }
+        .cta {
+            background: #8e44ad;
+            color: white;
+            text-align: center;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .cta h2 {
+            color: white;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .cta button {
+            background: white;
+            color: #8e44ad;
+            border: none;
+            padding: 12px 30px;
+            font-size: 18px;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+        .cta button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .testimonials {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .testimonial {
+            font-style: italic;
+            position: relative;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .testimonial:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        .testimonial:before {
+            content: '"';
+            font-size: 60px;
+            color: #f0e6fa;
+            position: absolute;
+            left: -20px;
+            top: -10px;
+            z-index: -1;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 1px solid #eee;
+        }
+        .emoji {
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+        @media (max-width: 768px) {
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+            .profile-pic {
+                margin: 0 auto 20px;
+            }
+            .service-box {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Transform Your Relationship With Money</h1>
+        <p>Financial Coaching that Feels like Chatting with your Bestie<br>(Who Happens to Be a Money Whiz)</p>
+    </header>
+
+    <section id="about" class="profile">
+        <div class="profile-pic">
+            <img src="face.png" alt="Ashley Barnum, Financial Coach">
+        </div>
+        <div class="profile-text">
+            <h2>Hey There! I'm Ashley.</h2>
+            <p>Part numbers nerd, part cheerleader, and entirely dedicated to helping you fall in love with your money journey! With 20+ years in accounting and an MBA, I've got the technical chops—but what really lights me up is watching people transform their relationship with money.</p>
+            <p>I believe financial wellness should feel good—like really good. No more money shame spirals or budget burnout. Just clarity, confidence, and maybe even some giggles along the way. (Yes, budgeting can actually be fun. I promise!)</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>How I Can Help You</h2>
+        <div class="services">
+            <div class="service-box">
+                <h3><span class="emoji">🧠</span>Money Mindset</h3>
+                <p>We'll gently uncover those sneaky limiting beliefs about money (we all have them!) and replace them with empowering perspectives that actually serve your beautiful life goals.</p>
+            </div>
+            <div class="service-box">
+                <h3><span class="emoji">💰</span>Practical Budgeting</h3>
+                <p>Using my favorite tool YNAB (You Need A Budget), we'll create a budgeting system that feels like a warm hug instead of a straitjacket. Your dollars will have meaningful jobs they actually enjoy!</p>
+            </div>
+            <div class="service-box">
+                <h3><span class="emoji">✨</span>Soul-Aligned Accountability</h3>
+                <p>Regular check-ins filled with encouragement, practical tips, and zero judgment. Think of me as your money buddy on speed dial, cheering you toward your financial dreams.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="approach">
+        <h2>My Approach</h2>
+        <p>Let's be real—money stuff can be emotional! I bring empathy, humor, and practical wisdom to every session. We'll laugh through the awkward bits and celebrate even the tiniest wins. My philosophy blends practical accounting know-how with intuitive money coaching that honors your unique values and goals. This isn't just about spreadsheets (though I do love a good spreadsheet)—it's about creating financial abundance that supports the life your heart truly desires.</p>
+    </section>
+
+    <section class="cta">
+        <h2>Ready to Transform Your Financial Life?</h2>
+        <p>Let's chat about your financial goals over a free 30-minute virtual coffee date!</p>
+        <button onclick="location.href='https://calendly.com/ashleybarnumcoaching/1on1'">Book Your Session</button>
+    </section>
+
+    <footer>
+        <p>Empowering Financial Journeys since 2023<br>
+        ©2025 Ashley Barnum Coaching | hello at ashleybarnum dot com</p>
+    </footer>
+</body>
 </html>
