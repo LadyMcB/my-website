@@ -6,35 +6,48 @@
     <title>Ashley Barnum Coaching | Money Mindset & Budgeting</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap');
-
-        /* CSS RESET STUFF */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');        /* CSS RESET STUFF */
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         html, body { height: 100%; }
 
         body {
-            font-family: 'National Park', 'Helvetica', sans-serif;
+            font-family: 'Poppins', 'Helvetica', sans-serif;
             line-height: 1.6;
             color: #555;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: #fffaf0;
+            padding-bottom: 20px;
+            background-color: whitesmoke;
+            position: relative;
         }
+
         header {
             text-align: center;
             padding: 40px 0 10px 0;
         }
 
+        .logo {
+            max-width: 300px;
+            height: auto;
+            margin: -5rem auto 20px;
+            display: block;
+        }
+
         header p { font-size: 1.5rem; font-weight: bold; }
 
         h1 {
+            font-family: "Playfair Display";
             color: #8e44ad;
+            margin-top: -5rem;
             margin-bottom: 10px;
-            font-size: 3.5rem;
+            font-size: 3.75rem;
+            font-weight: 700;
         }
         h2 {
+            font-family: "Poppins", sans-serif;
+            font-size: 2rem;
             color: #8e44ad;
             margin-bottom: 1rem;
         }
@@ -83,7 +96,6 @@
             padding: 25px;
             border-radius: 15px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            text-align: center;
             transition: transform 0.3s ease;
         }
         .service-box:hover {
@@ -118,7 +130,7 @@
             transform: scale(1.05);
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
-        .testimonials {
+        #testimonials {
             background: white;
             padding: 30px;
             border-radius: 15px;
@@ -127,9 +139,10 @@
         .testimonial {
             font-style: italic;
             position: relative;
-            padding: 20px;
+            padding: 0 30px;
             margin-bottom: 20px;
             border-bottom: 1px solid #eee;
+            text-align: justify;
         }
         .testimonial:last-child {
             border-bottom: none;
@@ -170,6 +183,7 @@
 </head>
 <body>
     <header>
+        <img src="images/abc-logo.png" alt="Ashley Barnum Coaching Logo" class="logo">
         <h1>Transform Your Relationship With Money</h1>
         <p>Financial Coaching that Feels like Chatting with your Bestie<br>(Who Happens to Be a Money Whiz)</p>
     </header>
@@ -181,7 +195,7 @@
         <div class="profile-text">
             <h2>Hey There! I'm Ashley.</h2>
             <p>Part numbers nerd, part cheerleader, and entirely dedicated to helping you fall in love with your money journey! With 20+ years in accounting and an MBA, I've got the technical chops—but what really lights me up is watching people transform their relationship with money.</p>
-            <p>I believe financial wellness should feel good—like really good. No more money shame spirals or budget burnout. Just clarity, confidence, and maybe even some giggles along the way. (Yes, budgeting can actually be fun. I promise!)</p>
+            <p>I believe financial wellness should feel good—like really good. No more money shame spirals or budget burnout. Just clarity, confidence, and maybe even some giggles along the way.<br>(Yes, budgeting can actually be fun. I promise!)</p>
         </div>
     </section>
 
@@ -190,11 +204,11 @@
         <div class="services">
             <div class="service-box">
                 <h3><span class="emoji">🧠</span>Money Mindset</h3>
-                <p>We'll gently uncover those sneaky limiting beliefs about money (we all have them!) and replace them with empowering perspectives that actually serve your beautiful life goals.</p>
+                <p>We'll gently uncover those stories you have about money that keep you feeling like you're doing it all wrong and replace them with empowering perspectives that actually serve your beautiful life goals.</p>
             </div>
             <div class="service-box">
                 <h3><span class="emoji">💰</span>Practical Budgeting</h3>
-                <p>Using my favorite tool YNAB (You Need A Budget), we'll create a budgeting system that feels like a warm hug instead of a straitjacket. Your dollars will have meaningful jobs they actually enjoy!</p>
+                <p>Using my favorite budgeting tool <a href="https://ynab.com/referral/?ref=S_vVZxLctMPKrcVf&utm_source=customer_referral">YNAB (You Need A Budget)</a>, we'll create a customized system that feels like a warm hug instead of a straitjacket. Your dollars will have meaningful jobs they actually enjoy!</p>
             </div>
             <div class="service-box">
                 <h3><span class="emoji">✨</span>Soul-Aligned Accountability</h3>
@@ -205,7 +219,15 @@
 
     <section id="approach">
         <h2>My Approach</h2>
-        <p>Let's be real—money stuff can be emotional! I bring empathy, humor, and practical wisdom to every session. We'll laugh through the awkward bits and celebrate even the tiniest wins. My philosophy blends practical accounting know-how with intuitive money coaching that honors your unique values and goals. This isn't just about spreadsheets (though I do love a good spreadsheet)—it's about creating financial abundance that supports the life your heart truly desires.</p>
+        <p>Let's be real—money stuff can be emotional! I bring empathy, humor, and practical wisdom to every session. We'll laugh through the awkward bits and celebrate even the tiniest wins. My philosophy blends practical accounting know-how with intuitive money coaching that honors your unique values and goals. This isn't about spreadsheets (though I do love a good spreadsheet)—it's about creating financial abundance that supports the life your heart truly desires.</p>
+    </section>
+
+    <section id="testimonials">
+        <h2>What My Clients Are Saying</h2>
+        <div class="testimonial">
+            <p>"Honestly, I tell everyone about her any time a money conversation comes up. I know she truly cares about helping me focus on my goals. She challenges my assumptions about myself, my ability and my relationship to money in the best ways. I've never felt more confident and comfortable with my budget and spending habits. It's not just her help with getting me out of debt (almost $4k in less than 6 months) but it's the way she doesn't make me feel dumb about my questions or try to fit me into a cookie cutter mold to 'get rich.' It's always about MY goals, how I want to feel about money and what values I have. If you're looking for someone who is compassionate, person-centered, and knows what she's doing, Ashley is definitely the person for you! You won't be disappointed!"
+            <br><strong>- Amber</strong></p>
+        </div>
     </section>
 
     <section class="cta">
