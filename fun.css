@@ -1,0 +1,21 @@
+.cloud-link {
+    position: absolute;
+    top: 80px;
+    right: 60px;
+    background: #fff3c4; /* soft cream yellow */
+    color: #8e44ad;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px 30px;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: rotate(28deg);
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.cloud-link:hover {
+    transform: rotate(22deg) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
