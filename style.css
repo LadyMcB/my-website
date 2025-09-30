@@ -21,6 +21,20 @@ header {
     padding: 40px 0 10px 0;
 }
 
+.breadcrumb {
+    margin: 20px 0;
+    color: #666;
+}
+
+.breadcrumb a {
+    color: #8e44ad;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
 .logo {
     max-width: 300px;
     height: auto;
